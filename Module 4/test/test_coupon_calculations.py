@@ -19,12 +19,12 @@ class MyTestCase(unittest.TestCase):
         self.assertAlmostEqual(calculate_price(21.40, 10.0, 0.15), 18.221, places=2)
         self.assertAlmostEqual(calculate_price(29.21, 10.0, 0.2), 24.240, places=2)
     def test_price_under_between_thirty_fifty(self):
-        self.assertAlmostEqual(calculate_price(32.0, 5.0, 0.1), ?, places=2)
-        self.assertAlmostEqual(calculate_price(38.86, 5.0, 0.15), ?, places=2)
-        self.assertAlmostEqual(calculate_price(45.64, 5.0, 0.2), ?, places=2)
-        self.assertAlmostEqual(calculate_price(37.32, 10.0, 0.1), ?, places=2)
-        self.assertAlmostEqual(calculate_price(41.25, 10.0, 0.15), ?, places=2)
-        self.assertAlmostEqual(calculate_price(49.39, 10.0, 0.2), ?, places=2)
+        self.assertAlmostEqual(calculate_price(32.0, 5.0, 0.1), 37.708, places=2)
+        self.assertAlmostEqual(calculate_price(38.86, 5.0, 0.15), 42.458, places=2)
+        self.assertAlmostEqual(calculate_price(45.64, 5.0, 0.2), 46.413, places=2)
+        self.assertAlmostEqual(calculate_price(37.32, 10.0, 0.1), 38.013, places=2)
+        self.assertAlmostEqual(calculate_price(41.25, 10.0, 0.15), 40.106, places=2)
+        self.assertAlmostEqual(calculate_price(49.39, 10.0, 0.2), 45.353, places=2)
 
 
 
