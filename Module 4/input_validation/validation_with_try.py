@@ -8,6 +8,8 @@ Last date modified: 09/21/2020
 def average(score1, score2, score3):
     if score1 < 0:
         raise ValueError
+    elif score2 < 0:
+        raise ValueError
 
     return ((score1+score2+score3)/3)
 
