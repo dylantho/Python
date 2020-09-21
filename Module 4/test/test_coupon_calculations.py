@@ -4,7 +4,7 @@ from coupon_calculations import calculate_price
 
 class MyTestCase(unittest.TestCase):
     def test_price_under_ten(self):
-        #self.assertAlmostEqual(calculate_price(cost, cash off, percent off),"expected result here", places=4)
+        #(example) self.assertAlmostEqual(calculate_price(cost, cash off, percent off),"expected result here", places=4)
         self.assertAlmostEqual(calculate_price(4.0, 5.0, .1), 5.95, places=4)
         self.assertAlmostEqual(calculate_price(6.0, 5.0, .15), 6.851, places=4)
         self.assertAlmostEqual(calculate_price(8.24, 5.0, .2), 9.838, places=4)
