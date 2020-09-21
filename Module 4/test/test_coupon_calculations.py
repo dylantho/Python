@@ -4,7 +4,7 @@ from coupon_calculations import calculate_price
 
 class MyTestCase(unittest.TestCase):
     def test_price_under_ten(self):
-        #(example) self.assertAlmostEqual(calculate_price(cost, cash off, percent off),"expected result here", places=4)
+        #(example) self.assertAlmostEqual(calculate_price(cost, cash off, percent off),"expected result here", places=2)
         self.assertAlmostEqual(calculate_price(4.0, 5.0, 0.1), 4.996, places=2)
         self.assertAlmostEqual(calculate_price(6.0, 5.0, 0.15), 6.851, places=2)
         self.assertAlmostEqual(calculate_price(8.24, 5.0, 0.2), 8.697, places=2)
@@ -26,19 +26,12 @@ class MyTestCase(unittest.TestCase):
         self.assertAlmostEqual(calculate_price(41.25, 10.0, 0.15), 40.106, places=2)
         self.assertAlmostEqual(calculate_price(49.39, 10.0, 0.2), 45.353, places=2)
     def test_price_under_over_fifty(self):
-        self.assertAlmostEqual(calculate_price(52.24, 5.0, 0.1), ?, places=2)
-        self.assertAlmostEqual(calculate_price(68.86, 5.0, 0.15), ?, places=2)
-        self.assertAlmostEqual(calculate_price(70.64, 5.0, 0.2), ?, places=2)
-        self.assertAlmostEqual(calculate_price(75.32, 10.0, 0.1), ?, places=2)
-        self.assertAlmostEqual(calculate_price(81.25, 10.0, 0.15), ?, places=2)
-        self.assertAlmostEqual(calculate_price(105.39, 10.0, 0.2), ?, places=2)
-
-
-
-
-
-
-
+        self.assertAlmostEqual(calculate_price(52.24, 5.0, 0.1), 45.067, places=2)
+        self.assertAlmostEqual(calculate_price(68.86, 5.0, 0.15), 57.538, places=2)
+        self.assertAlmostEqual(calculate_price(70.64, 5.0, 0.2), 55.663, places=2)
+        self.assertAlmostEqual(calculate_price(75.32, 10.0, 0.1), 62.315, places=2)
+        self.assertAlmostEqual(calculate_price(81.25, 10.0, 0.15), 64.196, places=2)
+        self.assertAlmostEqual(calculate_price(105.39, 10.0, 0.2), 80.891, places=2)
 
 
 if __name__ == '__main__':

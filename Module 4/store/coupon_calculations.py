@@ -1,3 +1,9 @@
+"""
+Program: coupon_calculations.py
+Author: Dylan Thomas
+Last date modified: 09/21/2020
+"""
+
 def calculate_price(originalPrice, cash_coupon, percent_coupon):
     #setup
     if originalPrice < 10:
@@ -24,4 +30,4 @@ if __name__ == '__main__':
     cash_coupon = float(input("Enter the cash coupon you have: "))
     percent_coupon = float(input("Enter the percent off coupon amount: "))
     endPrice = calculate_price(originalPrice, cash_coupon, percent_coupon)
-    print(endPrice)
+    print("The final cost is: $", round(endPrice, 2))
