@@ -7,6 +7,10 @@ Last date modified: 10/05/2020
 
 
 def measurements(a_list):
+    """This function creates a statement of the perimeter and area of a square or rectangle
+    :param a_list, a list of one or two numbers
+    :returns A statement of the area and perimeter
+    """
     width = 0
     length = a_list[0]
     if len(a_list) == 2:
@@ -14,6 +18,10 @@ def measurements(a_list):
 
 
     def area(a_list):
+        """This function takes in a list to calculate the area of a rectangle or square
+        :param a_list, a list of one or two numbers
+        :returns The area of the rectangle or square
+        """
         areaCalc = 0
         if len(a_list) == 1:
             areaCalc = length * length
@@ -24,6 +32,10 @@ def measurements(a_list):
         return areaCalc
 
     def perimeter(a_list):
+        """This function takes in a list to calculate the perimeter of a rectangle or square
+        :param a_list, a list of one or two numbers
+        :returns The perimeter of the rectangle or square
+        """
         perimeterCalc = 0
         if len(a_list) == 1:
             perimeterCalc = length * 4
