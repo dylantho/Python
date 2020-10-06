@@ -14,7 +14,7 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     """
     while True:
         try:
-            while (test_score < 0) or (test_score > 100):
+            while (type(test_score) != int) or (test_score < 0) or (test_score > 100):
 
                 print(invalid_message)
                 raise ValueError
