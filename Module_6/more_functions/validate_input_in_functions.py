@@ -12,13 +12,23 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     :param invalid_message, the message that is displayed when the user enters an invalid input
     :returns The name of the test and score
     """
+    while True:
+        try:
+            while (test_score < 0) or (test_score > 100):
 
+                print(invalid_message)
+                raise ValueError
+                test_score = int(input("Please enter a valid test score: "))
+            break
+        except ValueError:
+            raise ValueError
 
 
     test_score = str(test_score)
 
     # return { test_name: test_score}
     return test_name + ": " + test_score
+
 
 
 
