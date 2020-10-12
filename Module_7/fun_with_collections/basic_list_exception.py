@@ -1,5 +1,5 @@
 """
-Program: basic_list.py
+Program: basic_list_exception.py
 Author: Dylan Thomas
 Last date modified: 10/12/2020
 """
@@ -17,6 +17,7 @@ def make_list():
         try:
             userInput = int(userInput)
         except ValueError:
+            raise ValueError
             print("non numeric")
 
         myList.insert(len(myList), userInput)
@@ -26,3 +27,4 @@ def make_list():
 
 if __name__ == '__main__':
     make_list()
+
