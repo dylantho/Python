@@ -6,7 +6,8 @@ Last date modified: 10/12/2020
 
 
 def sort_list(list):
-    pass
+    list.sort()
+    return list
 
 
 def search_list(list, item):
