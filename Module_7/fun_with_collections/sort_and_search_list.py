@@ -10,7 +10,12 @@ def sort_list():
 
 
 def search_list(list, item):
-    pass
+    try:
+        found = list.index(item)
+    except ValueError:
+        return -1
+
+    return found
 
 
 if __name__ == '__main__':
