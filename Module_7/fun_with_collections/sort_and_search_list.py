@@ -5,7 +5,7 @@ Last date modified: 10/12/2020
 """
 
 
-def sort_list():
+def sort_list(list):
     pass
 
 
