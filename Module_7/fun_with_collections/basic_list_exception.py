@@ -20,6 +20,9 @@ def make_list():
             raise ValueError
             print("non numeric")
 
+        if (userInput < 1) or (userInput > 50):
+            raise ValueError
+
         myList.insert(len(myList), userInput)
 
         #myList.append(userInput) Alternate method
