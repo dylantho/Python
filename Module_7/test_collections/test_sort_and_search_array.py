@@ -11,7 +11,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(search_array(array.array('i', [1, 2, 3, 4]), 46), -1)
 
     def test_search_array_sorted(self):
-        self.assertEqual(sort_array([35, 75, -43, -65]), [-65, -43, 35, 75])
+        testarray = array.array('i', [35, 75, -43, -65])
+        self.assertEqual(sort_array(testarray), [-65, -43, 35, 75])
 
 
 if __name__ == '__main__':
