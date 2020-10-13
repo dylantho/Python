@@ -10,8 +10,12 @@ def sort_array(array):
 
 
 def search_array(array, item):
-    pass
+    try:
+        found = array.index(item)
+    except ValueError:
+        return -1
 
+    return found
 
 
 if __name__ == '__main__':
