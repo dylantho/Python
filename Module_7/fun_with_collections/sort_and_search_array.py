@@ -6,7 +6,8 @@ Last date modified: 10/12/2020
 
 
 def sort_array(array):
-    pass
+    array.sort()
+    return array
 
 
 def search_array(array, item):

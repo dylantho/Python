@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(search_array(['65', 23, -47, '12.9'], '99'), -1)
 
     def test_search_array_sorted(self):
-        self.assertEqual(sort_array([35, -75.4, -43, -65]), [-65, -43, 35, 75.4])
+        self.assertEqual(sort_array([35, 75.4, -43, -65]), [-65, -43, 35, 75.4])
 
 
 if __name__ == '__main__':
