@@ -4,7 +4,6 @@ Author: Dylan Thomas
 Last date modified: 10/12/2020
 """
 
-
 def sort_array(array):
     array.sort()
     return array
