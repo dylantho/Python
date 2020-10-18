@@ -5,7 +5,10 @@ Last date modified: 10/17/2020
 """
 
 def in_set(user_set, item):
-    pass
+    if item in user_set:
+        return True
+    else:
+        return False
 
 
 
