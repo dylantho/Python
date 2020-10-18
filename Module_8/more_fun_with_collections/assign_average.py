@@ -31,4 +31,5 @@ def switch_average(argument):
     }
 
     function = switch_dictionary.get(argument, lambda: "Invalid key")
+
     return function()
