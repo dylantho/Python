@@ -19,11 +19,15 @@ def switch_average(argument):
     def test_d():
         return 68
 
+    def test_e():
+        return 55
+
     switch_dictionary = {
         'A': test_a,
         'B': test_b,
         'C': test_c,
-        'D': test_d
+        'D': test_d,
+        'E': test_e
     }
 
     function = switch_dictionary.get(argument, lambda: "Invalid key")
