@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Module_6/more_functions" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Module_7/fun_with_collections" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Module_8/more_fun_with_collections" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Module_9" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
