@@ -28,6 +28,28 @@ class MyTestCase(unittest.TestCase):
     def tearDown(self):
         del self.student
 
+    # Test 3: __str__ Status: Pass
+    def setUp(self):
+        self.student = Student('Oliver', 'John', 'Media', 3.8)
+
+    def test_student_str(self):
+        self.assertEqual(str(self.student), 'Oliver, John has major Media with gpa: 3.8')
+
+    def tearDown(self):
+        del self.student
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
