@@ -15,6 +15,7 @@ class Student:
             raise AttributeError
         if (gpa < 0) or (gpa > 4):
             raise ValueError
+
         self.last_name = lname
         self.first_name = fname
         self.major = major
