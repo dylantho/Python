@@ -43,7 +43,7 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             p = Student('123', 'Daisy', 'Geology')
 
-    # Test 5: Invalid first_name Status: Fails
+    # Test 5: Invalid first_name Status: Pass
     def test_object_not_created_error_first_name(self):
         with self.assertRaises(ValueError):
             p = Student('Duck', '123', 'Geology')
