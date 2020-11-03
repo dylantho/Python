@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             p = Student('Oliver', '123', 'Media')
 
-    # Test 6: Invalid Major Status: Fails
+    # Test 6: Invalid Major Status: Pass
     def test_object_not_created_error_major(self):
         with self.assertRaises(ValueError):
             p = Student('Oliver', 'John', '123')
