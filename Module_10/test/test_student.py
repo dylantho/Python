@@ -53,6 +53,11 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             p = Student('Oliver', 'John', '123')
 
+    # Test 7: Invalid gpa (non numeric) Status: Fails
+    def test_object_not_created_error_gpa(self):
+        with self.assertRaises(AttributeError):
+            p = Student('Oliver', 'John', 'Media', 'twenty')
+
 
 
 
