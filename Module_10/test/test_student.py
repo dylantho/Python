@@ -38,6 +38,11 @@ class MyTestCase(unittest.TestCase):
     def tearDown(self):
         del self.student
 
+    # Test 4: invalid last_name Status: Fail
+
+    def test_object_not_created_error_last_name(self):
+        with self.assertRaises(ValueError):
+            p = Student('123', 'Daisy', 'Geology')
 
 
 
