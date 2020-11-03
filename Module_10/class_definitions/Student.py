@@ -11,6 +11,8 @@ class Student:
         name_characters = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'-")
         if not (name_characters.issuperset(lname) and name_characters.issuperset(fname) and name_characters.issuperset(major)):
             raise ValueError
+        if not isinstance(gpa, float):
+            raise AttributeError
         self.last_name = lname
         self.first_name = fname
         self.major = major
