@@ -58,6 +58,11 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(AttributeError):
             p = Student('Oliver', 'John', 'Media', 'twenty')
 
+    # Test 8: Invalid gpa (outside of range) Status: Fail
+    def test_object_not_created_error_gpa(self):
+        with self.assertRaises(ValueError):
+            p = Student('Oliver', 'John', 'Media', 5.0)
+
 
 
 
