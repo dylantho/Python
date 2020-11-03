@@ -41,12 +41,17 @@ class MyTestCase(unittest.TestCase):
     # Test 4: Invalid last_name Status: Pass
     def test_object_not_created_error_last_name(self):
         with self.assertRaises(ValueError):
-            p = Student('123', 'Daisy', 'Geology')
+            p = Student('123', 'John', 'Media')
 
     # Test 5: Invalid first_name Status: Pass
     def test_object_not_created_error_first_name(self):
         with self.assertRaises(ValueError):
-            p = Student('Duck', '123', 'Geology')
+            p = Student('Oliver', '123', 'Media')
+
+    # Test 6: Invalid Major Status: Fails
+    def test_object_not_created_error_major(self):
+        with self.assertRaises(ValueError):
+            p = Student('Oliver', 'John', '123')
 
 
 
