@@ -39,13 +39,10 @@ class Employee:
 
 
 # Driver
-emp1_start = datetime.datetime(2020, 6, 28)
-emp2_start = datetime.datetime(2021, 1, 15)
-
 # Assignment example
-emp = Employee('Patel', 'Sasha', '123 Main Street\nUrban, Iowa', '111-222-3333', True, emp1_start, 40000)
+emp = Employee('Patel', 'Sasha', '123 Main Street\nUrban, Iowa', '111-222-3333', True, datetime.datetime(2020, 6, 28), 40000)
 # Original test (Check if hourly condition is reached)
-emp2 = Employee('Thomas', 'Dylan', '456 Mountain Street\nDenver, Colorado', '444-555-6666', False, emp2_start, 13.50)
+emp2 = Employee('Thomas', 'Dylan', '456 Mountain Street\nDenver, Colorado', '444-555-6666', False, datetime.datetime(2021, 1, 15), 13.50)
 
 print(emp.display())
 del emp
