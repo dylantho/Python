@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Module_8/more_fun_with_collections" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Module_9" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Module_10/class_definitions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Module_12/custom_exceptions" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
