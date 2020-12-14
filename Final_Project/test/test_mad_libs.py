@@ -103,7 +103,6 @@ class MyTestCase(unittest.TestCase):
 
     def test_create_story_insufficient_words(self):
         # Test create story insufficient words - No words in dict
-        self.madlib.word_dict = {'Noun': [], 'Verb': [], 'Adjective': [], 'Adverb': [], 'Plural noun': [], 'Past tense verb': [], 'Name': [], 'Place': []}
         self.madlib.set_story(dog_story)
         self.assertEqual(self.madlib.create_story(), "InsufficientWordsError: Not enough words for this story, continue entering words\n")
 
